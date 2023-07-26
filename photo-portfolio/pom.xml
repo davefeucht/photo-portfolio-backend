@@ -40,7 +40,7 @@
 
 		<dependency>
 			<groupId>org.hamcrest</groupId>
-			<artifactId>hamcrest</artifactId>
+			<artifactId>hamcrest-library</artifactId>
 			<version>2.2</version>
 			<scope>test</scope>
 		</dependency>
