@@ -48,8 +48,8 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-			<scope>test</scope>
+			<version>1.18.28</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
