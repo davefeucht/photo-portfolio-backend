@@ -9,7 +9,6 @@ import lombok.Setter;
 @Getter @Setter @NoArgsConstructor
 public class Post {
     private int id;
-    private String link;
     private String modified;
     private String type;
     private String title;
@@ -44,14 +43,4 @@ public class Post {
             this.tags.remove(tagId);
         }
     }
-
-    /*
-     * Not sure if we want to do this here, or in the database directly
-    private generateId() {
-    }
-
-    private generateLink() {
-
-    }
-    */
 }
