@@ -1,12 +1,8 @@
 package com.throughapinhole.photoportfolio.entities;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.NoArgsConstructor;
+import lombok.Data;
 
-@Getter
-@Setter
-@NoArgsConstructor
+@Data
 public class SiteInfo {
     private String description;
     private String gmt_offset;
