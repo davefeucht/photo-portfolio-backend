@@ -1,5 +1,7 @@
 package com.throughapinhole.photoportfolio.entities;
 
+import com.throughapinhole.photoportfolio.utils.Utils;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
