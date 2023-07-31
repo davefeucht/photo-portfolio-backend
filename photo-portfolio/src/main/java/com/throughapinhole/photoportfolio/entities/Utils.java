@@ -1,4 +1,4 @@
-package com.throughapinhole.photoportfolio.Classes;
+package com.throughapinhole.photoportfolio.entities;
 
 /**
  * Contains constant values and utility methods for use in the project

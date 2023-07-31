@@ -1,10 +1,12 @@
-package com.throughapinhole.photoportfolio.Classes;
+package com.throughapinhole.photoportfolio.entities;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter @Setter @NoArgsConstructor
+@Getter
+@Setter
+@NoArgsConstructor
 /**
  * Represents a Category of the CMS
  */
