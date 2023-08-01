@@ -3,13 +3,9 @@ package com.throughapinhole.photoportfolio.entities;
 import java.util.ArrayList;
 import java.util.Date;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
-@NoArgsConstructor
+@Data
 /**
  * Represents a Post of the CMS
  */
