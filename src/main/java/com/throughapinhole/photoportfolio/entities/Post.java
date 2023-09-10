@@ -9,7 +9,7 @@ import lombok.Data;
  */
 @Data
 public class Post {
-  private int id;
+  private long id;
   /** Date/Time Post was last modified. */
   private Date modified;
   /** Type of Post. */
@@ -19,9 +19,9 @@ public class Post {
   /** Text content of Post. */
   private String content;
   /** User ID of author of Post. */
-  private int authorId;
+  private long authorId;
   /** Media ID of featured Media of Post. */
-  private int featuredMediaId;
+  private long featuredMediaId;
   /** List of Category IDs assigned to the Post. */
   private ArrayList<Integer> categoryIds;
   /** List of Tag IDs assigned to the Post. */

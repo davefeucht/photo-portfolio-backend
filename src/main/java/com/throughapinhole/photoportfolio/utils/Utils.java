@@ -5,7 +5,7 @@ package com.throughapinhole.photoportfolio.utils;
  */
 final public class Utils {
     /** Value for a Category which has no parent */
-    final public static int CATEGORY_NO_PARENT = -1; 
+    final public static long CATEGORY_NO_PARENT = -1; 
 
     private Utils() {}
 }

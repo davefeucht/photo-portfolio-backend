@@ -7,7 +7,7 @@ import lombok.Data;
  */
 @Data
 public class MediaSize {
-  private int id;
+  private long id;
   private String name;
   private String file;
   private int width;
