@@ -25,24 +25,24 @@ CREATE TABLE IF NOT EXISTS MediaDetails (
     mediaType varchar(255)
 );
 
-CREATE TABLE IF NOT EXISTS MediaSize {
+CREATE TABLE IF NOT EXISTS MediaSize (
     id bigint,
     name varchar(255),
     file varchar(255),
     width int,
     height int,
     sourceUrl varchar(255)
-}
+);
 
-CREATE TABLE IF NOT EXISTS SiteInfo {
+CREATE TABLE IF NOT EXISTS SiteInfo (
     description varchar(255),
     gmtOfffset varchar(255),
     siteIcon bigint,
     siteLogo bigint,
     url varchar(255)
-}
+);
 
-CREATE TABLE IF NOT EXISTS Page {
+CREATE TABLE IF NOT EXISTS Page (
     id bigint,
     link varchar(255),
     modified date,
@@ -50,10 +50,10 @@ CREATE TABLE IF NOT EXISTS Page {
     title varchar(255),
     content varchar(255),
     authorId bigint,
-    featuredMediaId, bigint
-}
+    featuredMediaId bigint
+);
 
-CREATE TABLE IF NOT EXISTS Post {
+CREATE TABLE IF NOT EXISTS Post (
     id bigint,
     modified date,
     type varchar(255),
@@ -64,4 +64,4 @@ CREATE TABLE IF NOT EXISTS Post {
     categoryIds bigint,
     tagIds bigint,
     thumbnailImage varchar(255)
-}
+);
