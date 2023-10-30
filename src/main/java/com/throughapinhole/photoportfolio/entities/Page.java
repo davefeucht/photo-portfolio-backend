@@ -1,8 +1,7 @@
 package com.throughapinhole.photoportfolio.entities;
 
-import lombok.Data;
-
 import java.util.Date;
+import lombok.Data;
 
 @Data
 public class Page {
