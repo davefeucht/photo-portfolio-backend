@@ -2,15 +2,13 @@ package com.throughapinhole.photoportfolio.utils;
 
 import lombok.Data;
 
-/**
- * Implements data structure for Media Size.
- */
+/** Implements data structure for Media Size. */
 @Data
 public class MediaSize {
-  private long id;
-  private String name;
-  private String file;
-  private int width;
-  private int height;
-  private String sourceUrl; 
+    private long id;
+    private String name;
+    private String file;
+    private int width;
+    private int height;
+    private String sourceUrl;
 }
