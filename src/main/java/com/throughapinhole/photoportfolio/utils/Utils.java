@@ -12,7 +12,7 @@ public final class Utils {
 
         private final int value;
 
-        USER_STATUS (final int newValue) {
+        USER_STATUS(final int newValue) {
             value = newValue;
         }
 
@@ -20,5 +20,6 @@ public final class Utils {
             return value;
         }
     }
+
     private Utils() {}
 }

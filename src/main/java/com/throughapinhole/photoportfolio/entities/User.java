@@ -1,14 +1,10 @@
 package com.throughapinhole.photoportfolio.entities;
 
-import java.util.Date;
-
 import com.throughapinhole.photoportfolio.utils.Utils.USER_STATUS;
-
+import java.util.Date;
 import lombok.Data;
 
-/**
- * Implements data structure for a User.
- */
+/** Implements data structure for a User. */
 @Data
 public class User {
     private long id;
