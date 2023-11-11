@@ -1,13 +1,20 @@
 package com.throughapinhole.photoportfolio.entities;
 
 import com.throughapinhole.photoportfolio.utils.Utils.EntityType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import java.util.ArrayList;
 import java.util.Date;
 import lombok.Data;
 
 /** Represents a Post of the CMS. */
+@Entity
 @Data
 public class Post {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     /** Date/Time Post was last modified. */
