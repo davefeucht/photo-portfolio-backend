@@ -7,7 +7,7 @@ import lombok.Data;
 /** Represents a Post of the CMS. */
 @Data
 public class Post {
-    private int id;
+    private long id;
 
     /** Date/Time Post was last modified. */
     private Date modified;
@@ -22,10 +22,10 @@ public class Post {
     private String content;
 
     /** User ID of author of Post. */
-    private int authorId;
+    private long authorId;
 
     /** Media ID of featured Media of Post. */
-    private int featuredMediaId;
+    private long featuredMediaId;
 
     /** List of Category IDs assigned to the Post. */
     private ArrayList<Integer> categoryIds;

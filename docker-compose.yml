@@ -1,0 +1,39 @@
+version: '3.6'
+
+volumes:
+  db-vol:
+
+services:
+  db:
+    image: mysql
+    command: --default-authentication-plugin=caching_sha2_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: photo_portfolio
+      MYSQL_USER: web_user
+      MYSQL_PASSWORD: password
+
+    volumes:
+      - db-vol:/var/lib/mysql
+
+    ports:
+      - "3306:3306"
+
+  db_seeder:
+    image: mysql
+    volumes:
+      - ./mysql-seed.sql:/mysql-seed.sql
+    entrypoint: ["bash", "-c", "sleep 10 && mysql --user=root --password=root --host=db --port=3306 photo_portfolio < /mysql-seed.sql && exit"]
+    depends_on:
+      - db
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+    depends_on:
+      - db_seeder

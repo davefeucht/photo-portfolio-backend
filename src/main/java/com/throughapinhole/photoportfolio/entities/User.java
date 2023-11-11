@@ -1,5 +1,9 @@
 package com.throughapinhole.photoportfolio.entities;
 
+import java.util.Date;
+
+import com.throughapinhole.photoportfolio.utils.Utils.USER_STATUS;
+
 import lombok.Data;
 
 /**
@@ -7,8 +11,15 @@ import lombok.Data;
  */
 @Data
 public class User {
-  private long id;
-  private String email;
-  private String name;
-  private String password;
+    private long id;
+    private String login;
+    private String password;
+    private String email;
+    private Date registeredDate;
+    private String activationKey;
+    private USER_STATUS status;
+    private String displayName;
+    private String firstName;
+    private String lastName;
+    private String description;
 }
