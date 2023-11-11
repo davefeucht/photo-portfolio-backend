@@ -1,5 +1,7 @@
 package com.throughapinhole.photoportfolio.entities;
 
+import com.throughapinhole.photoportfolio.utils.Utils.EntityType;
+
 import java.util.ArrayList;
 import java.util.Date;
 import lombok.Data;
@@ -11,16 +13,12 @@ public class Post {
 
     /** Date/Time Post was last modified. */
     private Date modified;
-
     /** Type of Post. */
-    private String type;
-
+    private EntityType type;
     /** Text title of Post. */
     private String title;
-
     /** Text content of Post. */
     private String content;
-
     /** User ID of author of Post. */
     private long authorId;
 
@@ -29,22 +27,19 @@ public class Post {
 
     /** List of Category IDs assigned to the Post. */
     private ArrayList<Integer> categoryIds;
-
     /** List of Tag IDs assigned to the Post. */
     private ArrayList<Integer> tagIds;
-
     /** Link to thumbnail image. */
     private String thumbnailImage;
 
     /**
-     * Creates a Post with given type, title, content and author.
-     *
-     * @param type Type of the Post
-     * @param title Text title of the Post
-     * @param content Text content of the Post
-     * @param authorId User ID of the author of the Post
-     */
-    public Post(String type, String title, String content, int authorId) {
+        * Creates a Post with a given type, title, content and author. 
+        * @param type Type of the Post
+        * @param title Text title of the Post
+        * @param content Text content of the Post
+        * @param authorId User ID of the author of the Post
+        */
+    public Post(EntityType type, String title, String content, int authorId) {
         this.type = type;
         this.title = title;
         this.content = content;
