@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 /** Represents a Category of the CMS */
 public class Category {
-    private int id;
+    private long id;
 
     /** Number of items using this Category */
     private int count;
@@ -21,7 +21,7 @@ public class Category {
     private String taxonomy;
 
     /** ID of the parent category. Has value -1 if there is no parent */
-    private int parent = Utils.CATEGORY_NO_PARENT;
+    private long parent = Utils.CATEGORY_NO_PARENT;
 
     /**
      * Creates a Category with a given description, taxonomy and name

@@ -10,5 +10,20 @@ public final class Utils {
         ATTACHMENT
     };
 
+    public static enum USER_STATUS {
+        ACTIVE(0),
+        REGISTERED(1),
+        DISABLED(2);
+
+        private final int value;
+
+        USER_STATUS (final int newValue) {
+            value = newValue;
+        }
+
+        public int getValue() {
+            return value;
+        }
+    }
     private Utils() {}
 }
