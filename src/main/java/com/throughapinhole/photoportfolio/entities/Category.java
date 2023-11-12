@@ -1,11 +1,18 @@
 package com.throughapinhole.photoportfolio.entities;
 
 import com.throughapinhole.photoportfolio.utils.Utils;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.Data;
 
+@Entity
 @Data
 /** Represents a Category of the CMS */
 public class Category {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     /** Number of items using this Category */
